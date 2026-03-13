@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colombia Travel Bucket List - Cartagena</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: url('imagen1.png') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    background-color: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+section {
+    padding: 50px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #f39c12;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #d35400;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Discover Cartagena – Colombia’s Caribbean Jewel</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#where">Where to Go</a>
+    <a href="#what">What to Do</a>
+    <a href="#tips">Travel Tips</a>
+</nav>
+
+<section id="home">
+    <h2>Home / Landing Page</h2>
+    <div class="card">
+        <p>
+        Cartagena is one of the most beautiful cities in Colombia. Located on the Caribbean coast, 
+        it combines history, culture, and tropical beaches. The city used to be an important colonial port, 
+        and today it attracts visitors from all over the world. 
+        You must visit Cartagena if you want to experience colorful streets, local gastronomy, and vibrant nightlife.
+        </p>
+    </div>
+</section>
+
+<section id="where">
+    <h2>Where to Go</h2>
+    <div class="card">
+        <h3>The Walled City</h3>
+        <p>
+        You must walk around the historic center and look at the colonial balconies. 
+        You can sit down in the plazas and take in the Caribbean atmosphere.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Castillo San Felipe</h3>
+        <p>
+        You have to visit this fortress because it is one of the most important historical sites in Colombia. 
+        If you go early, you will avoid large crowds.
+        </p>
+    </div>
+</section>
+
+<section id="what">
+    <h2>What to Do</h2>
+    <div class="card">
+        <ul>
+            <li>You should take a boat tour to the Rosario Islands.</li>
+            <li>If you book in advance, you will get better prices. (First Conditional)</li>
+            <li>If you travel during high season, prices increase. (Zero Conditional)</li>
+            <li>You must try local food like arepas and coconut rice.</li>
+            <li>You could go out at night and listen to salsa music.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="tips">
+    <h2>Travel Tips</h2>
+    <div class="card">
+        <ul>
+            <li>You must wear light clothes because the weather is hot.</li>
+            <li>You have to use sunscreen.</li>
+            <li>You don’t have to rent a car; you can walk everywhere.</li>
+            <li>You must not carry too much cash.</li>
+        </ul>
+
+        <button onclick="showMessage()">Click for Extra Tip</button>
+        <p id="extraTip"></p>
+    </div>
+</section>
+
+<footer>
+    <p>Colombia Travel Bucket List Blog - 2026</p>
+</footer>
+
+<script>
+function showMessage() {
+    document.getElementById("extraTip").innerHTML = 
+    "If you stay inside the Walled City, you will save time and enjoy the atmosphere.";
+}
+</script>
+
+</body>
+</html>
